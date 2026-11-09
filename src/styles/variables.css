@@ -1,0 +1,8 @@
+:root {
+  --primary: #2f7048; --primary-dark: #173f2b; --secondary: #a7c978;
+  --accent: #e8f1df; --background: #fbfcf8; --dark: #173025;
+  --text: #66776b; --border: #e1e9de;
+  --font-body: "DM Sans", sans-serif; --font-display: "Playfair Display", serif;
+  --shadow: 0 18px 50px rgba(27, 70, 40, .1);
+  --radius-lg: 28px;
+}

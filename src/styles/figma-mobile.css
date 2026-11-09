@@ -1,0 +1,213 @@
+.figma-mobile-page {
+  width: 375px;
+  max-width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #141c2d;
+}
+
+.figma-header {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+  background: #141c2d;
+}
+
+.figma-header img,
+.figma-image-section img,
+.figma-menu img {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: auto;
+}
+
+.figma-image-section {
+  width: 100%;
+  line-height: 0;
+}
+
+.header-menu-button,
+.menu-close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 74px;
+  height: 77px;
+  border: 0;
+  background: transparent;
+}
+
+.figma-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  width: min(100%, 375px);
+  margin: 0 auto;
+  background: #00bd79;
+}
+
+.figma-menu-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.figma-menu-content {
+  padding-top: 0;
+  margin-top: 77px;
+}
+
+.figma-menu-links {
+  position: absolute;
+  top: 77px;
+  left: 0;
+  width: 100%;
+  height: 270px;
+}
+
+.figma-menu-links a {
+  position: absolute;
+  left: 16px;
+  width: 190px;
+  height: 48px;
+  color: transparent;
+  font-size: 1px;
+}
+
+.figma-menu-links .checkup-link {
+  top: 600px;
+  width: 320px;
+  height: 65px;
+}
+
+.service-hotspot {
+  position: absolute;
+  left: 36px;
+  width: 303px;
+  height: 55px;
+  border: 0;
+  background: transparent;
+}
+
+.service-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 35;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(9, 15, 26, .78);
+}
+
+.service-modal-card {
+  position: relative;
+  width: 375px;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #141c2d;
+  box-shadow: 0 20px 70px rgba(0, 0, 0, .35);
+}
+
+.service-modal-card img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.service-modal-copy {
+  padding: 24px;
+  color: #fff;
+}
+
+.service-modal-copy span {
+  color: #00c681;
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.service-modal-copy h2 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+}
+
+.service-modal-copy p {
+  margin: 0 0 22px;
+  color: #d7dce5;
+  line-height: 1.6;
+}
+
+.service-modal-copy a {
+  display: inline-flex;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 4px;
+  background: #00bd79;
+  color: #fff;
+  font-weight: 700;
+}
+
+.service-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  background: #fff;
+  color: #141c2d;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.checkup-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: grid;
+  place-items: center;
+  background: rgba(9, 15, 26, .72);
+}
+
+.checkup-modal img {
+  display: block;
+  width: 375px;
+  max-width: 100%;
+  height: auto;
+  image-rendering: auto;
+}
+
+.checkup-close {
+  position: absolute;
+  top: max(24px, calc(50% - 382px));
+  left: calc(50% + 132px);
+  width: 48px;
+  height: 48px;
+  border: 0;
+  background: transparent;
+}
+
+.menu-close-button {
+  top: 0;
+  right: 0;
+  bottom: auto;
+  width: 72px;
+  height: 72px;
+}
+
+@media (min-width: 376px) {
+  body {
+    background: #0e1422;
+  }
+
+  .figma-mobile-page {
+    box-shadow: 0 0 70px rgba(0, 0, 0, .3);
+  }
+}

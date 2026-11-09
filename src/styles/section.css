@@ -1,0 +1,535 @@
+/* About */
+
+.about-grid,
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.about-image,
+.why-image {
+  position: relative;
+}
+
+.about-image img,
+.why-image img {
+  width: 100%;
+  height: 490px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+.about-badge {
+  position: absolute;
+  right: -20px;
+  bottom: 30px;
+  background: white;
+  color: var(--primary);
+  padding: 22px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: var(--shadow);
+}
+
+.about-points {
+  display: grid;
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.about-points > div {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.about-points svg {
+  color: var(--primary);
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background: var(--accent);
+  border-radius: 10px;
+}
+
+.about-points p,
+.about-content > .section-title p {
+  color: var(--text);
+  line-height: 1.8;
+  margin-top: 7px;
+}
+
+/* Features */
+
+.features {
+  background: #f2f7ed;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.feature-card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 18px;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow);
+}
+
+.feature-icon {
+  height: 65px;
+  width: 65px;
+  background: var(--accent);
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  color: var(--primary);
+  margin-bottom: 25px;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+/* Services */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.service-card,
+.product-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.service-image {
+  position: relative;
+}
+
+.service-image img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.service-image span {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background: white;
+  color: var(--primary);
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-weight: 700;
+}
+
+.service-content {
+  padding: 25px;
+}
+
+.service-content h3 {
+  margin-bottom: 12px;
+}
+
+.service-content p {
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.service-content a {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* Products */
+
+.products {
+  background: #f7f9f4;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.product-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.product-card:hover img {
+  transform: scale(1.07);
+}
+
+.product-label {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: var(--accent);
+  color: var(--primary);
+  padding: 7px 13px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.product-info {
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-info h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.product-info strong {
+  color: var(--primary);
+}
+
+.product-info a {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  background: var(--accent);
+  color: var(--primary);
+  border-radius: 50%;
+}
+
+/* Why Choose Us */
+
+.why-us {
+  background: var(--primary-dark);
+  color: white;
+}
+
+.why-content .section-tag {
+  color: var(--secondary);
+}
+
+.why-content h2 {
+  font-size: clamp(36px, 4vw, 52px);
+  margin: 20px 0;
+  line-height: 1.2;
+}
+
+.why-content h2 span {
+  color: var(--secondary);
+}
+
+.why-content > p {
+  color: #d4e0d3;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.benefit-list {
+  display: grid;
+  gap: 18px;
+}
+
+.benefit-list div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.benefit-list svg {
+  color: var(--secondary);
+}
+
+.why-image img {
+  height: 440px;
+}
+
+.why-floating {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  background: white;
+  color: var(--primary);
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+}
+
+/* Testimonials */
+
+.testimonials {
+  background: #f7f9f4;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.testimonial-card {
+  padding: 30px;
+  border-radius: 18px;
+  background: white;
+  box-shadow: var(--shadow);
+}
+
+.stars {
+  color: #e9b64c;
+  display: flex;
+  gap: 5px;
+}
+
+.testimonial-card > p {
+  color: var(--text);
+  line-height: 1.8;
+  margin: 22px 0;
+}
+
+.customer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.customer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.customer h4 {
+  font-size: 14px;
+}
+
+.customer span {
+  font-size: 12px;
+  color: var(--text);
+}
+
+/* Gallery */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.gallery-item {
+  height: 260px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* CTA */
+
+.cta-section {
+  padding: 85px 0;
+  background:
+    linear-gradient(rgba(20, 65, 35, 0.86), rgba(20, 65, 35, 0.86)),
+    url("../assets/Why%20is%20choose%20us.png")
+    center/cover;
+  text-align: center;
+  color: white;
+}
+
+.cta-content > span {
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.cta-content h2 {
+  font-size: clamp(34px, 5vw, 55px);
+  margin: 20px 0;
+}
+
+.cta-content p {
+  color: #e0e9df;
+  margin-bottom: 30px;
+}
+
+/* Newsletter */
+
+.newsletter {
+  padding: 65px 0;
+  background: #edf4e8;
+}
+
+.newsletter-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.newsletter h2 {
+  font-size: 30px;
+  margin: 12px 0;
+}
+
+.newsletter p {
+  color: var(--text);
+}
+
+.newsletter form {
+  position: relative;
+  display: flex;
+  width: 480px;
+  max-width: 100%;
+  padding: 6px;
+  border-radius: 50px;
+  background: white;
+}
+
+.newsletter input {
+  width: 100%;
+  min-width: 0;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background: transparent;
+}
+
+.newsletter button {
+  border: none;
+  border-radius: 40px;
+  background: var(--primary);
+  color: white;
+  padding: 13px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.success-message {
+  position: absolute;
+  top: 55px;
+  left: 15px;
+  font-size: 13px;
+  color: var(--primary) !important;
+}
+
+/* Footer */
+
+.footer {
+  background: #142b1c;
+  color: white;
+  padding: 75px 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+  gap: 40px;
+  padding-bottom: 55px;
+}
+
+.footer-brand p {
+  color: #b7c6b9;
+  line-height: 1.8;
+  margin: 22px 0;
+  max-width: 280px;
+}
+
+.footer-grid h4 {
+  margin-bottom: 23px;
+}
+
+.footer-grid > div:not(:first-child) {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-grid > div:not(:first-child) p,
+.footer-grid > div:not(:first-child) a {
+  color: #b7c6b9;
+  font-size: 14px;
+}
+
+.footer-grid > div:not(:first-child) a:hover {
+  color: var(--secondary);
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-links a {
+  height: 38px;
+  width: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social-links svg {
+  width: 17px;
+  height: 17px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  color: #b7c6b9;
+  font-size: 13px;
+}

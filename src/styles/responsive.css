@@ -1,0 +1,41 @@
+@media (max-width: 900px) {
+  .hero-grid, .about-grid, .why-grid { gap: 38px; }
+  .hero-grid { grid-template-columns: 1fr 1fr; }
+  .features-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 700px) {
+  .container { width: min(100% - 32px, 560px); }
+  .section { padding: 72px 0; }
+  .nav-wrapper { min-height: 68px; }
+  .nav-links { position: absolute; top: 68px; left: 0; right: 0; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 8px 16px 18px; background: var(--background); box-shadow: var(--shadow); }
+  .nav-links.active { display: flex; }
+  .nav-links a { padding: 13px 4px; border-bottom: 1px solid var(--border); }
+  .nav-button { display: none; }
+  .menu-toggle { display: grid; place-items: center; }
+  .hero { padding: 56px 0 72px; }
+  .hero-grid, .about-grid, .why-grid { grid-template-columns: 1fr; }
+  .hero-content h1 { font-size: clamp(3rem, 16vw, 4.5rem); }
+  .hero-image { height: 370px; border-radius: 120px 24px 120px 24px; }
+  .hero-floating-card { left: 12px; bottom: 18px; }
+  .about-image img, .why-image img { height: 330px; }
+  .services-grid, .products-grid, .testimonials-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-item { height: 190px; }
+  .newsletter-wrapper { align-items: flex-start; flex-direction: column; }
+  .newsletter form { width: 100%; }
+}
+@media (max-width: 430px) {
+  .hero-actions { align-items: stretch; flex-direction: column; gap: 15px; }
+  .hero-actions .btn { width: 100%; }
+  .hero-stats { justify-content: space-between; gap: 12px; }
+  .hero-stats h3 { font-size: 1.15rem; }
+  .hero-stats span { font-size: .62rem; }
+  .features-grid, .gallery-grid { grid-template-columns: 1fr; }
+  .gallery-item { height: 250px; }
+  .newsletter form { flex-direction: column; border-radius: 16px; padding: 8px; }
+  .newsletter button { justify-content: center; }
+  .success-message { position: static; padding: 8px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { align-items: flex-start; flex-direction: column; gap: 8px; }
+}
